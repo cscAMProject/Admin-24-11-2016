@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD  
+Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">  
+<struts>  
+  
+<package name="jsp" extends="struts-default" namespace="/Admin_jsp">  
+  
+<action name="create_user" class="admin_action.CreateUserAction">  
+<result name="success">create_user_success.jsp</result>  
+<result name="error">create_user_error.jsp</result>  
+<result name="input">admin_create_user.jsp</result> 
+</action>
+
+<action name="modify_search" class="admin_action.ModifyUserActionSearch">  
+<result name="success">adminModifyUser.jsp</result>  
+<result name="error">admin_modify_error.jsp</result>  
+<result name="input">adminModifySearch.jsp</result> 
+</action>  
+
+<action name="modify_user" class="admin_action.ModifyUserAction">  
+<result name="success">adminModifySuccessMessage.jsp</result>  
+<result name="error">admin_modify_error.jsp</result>  
+<result name="input">adminModifySearch.jsp</result> 
+</action> 
+
+<action name="deactivate_search_user" class="admin_action.DeactivateSearch">  
+<result name="success">adminDeactivateSearch.jsp</result>  
+<result name="error">adminDeactivateError.jsp</result>  
+<result name="input">adminDeactivateUser.jsp</result> 
+</action>
+
+<action name="deactivate_user" class="admin_action.DeactivateUserAction">  
+<result name="success">adminDeactivateSuccessMessage.jsp</result>  
+<result name="error">adminDeactivateMessage.jsp</result>  
+<result name="input">adminDeactivateUser.jsp</result> 
+</action>
+
+<action name="view_search" class="admin_action.ViewUserActionSearch">  
+<result name="success">adminViewUser.jsp</result>  
+<result name="error">adminDeactivateMessage.jsp</result>  
+<result name="input">adminDeactivateUser.jsp</result> 
+</action>
+  
+</package>  
+</struts>      
